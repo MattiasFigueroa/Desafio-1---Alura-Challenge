@@ -1,49 +1,71 @@
 html{
-	background-color: seagreen;
+	background-color: black;
 }
 main{
 	display: flex;
 	justify-content: space-around;
 }
 
+header{
+	background-color: ghostwhite;
+	width: 100%;
+	height: 50px;
+}
+header h1{
+	text-align: center;
+}
 
 .entrada-datos{
-	background-color: lightcoral;
-	width: 50%;
-	height: 500px;
-	padding: 20px;
+	background-color: gray;
+	width: 40%;
+	height: 400px;
+	margin: 30px 0;
+	padding: 10px 10px;
 	border-style: solid;
 	border-radius: 10px;
 	border-width: 3px;
 	border-color: black;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-between;
+}
+
+
+.texto{
+	border-radius: 10px;
 }
 .entrada{
 	color: black;
 	font-weight: bold;
 	font-size: 20px;
 	padding: 10px;
-	background-color: whitesmoke;
+	background-color: floralwhite;
 	border-radius: 5px;
+	
 }
-.caja1,.caja2{
-	background-color: yellow;
-}
-.caja3{
-	background-color: red;
-}
+
+
 .texto-encriptado{
-	background-color: aliceblue;
-	width: 50%;
-	height: 500px;
-	padding: 20px;
+	background-color: gray;
+	width: 40%;
+	height: 400px;
+	margin: 30px 0;
+	padding: 10px;
 	border-style: solid;
 	border-radius: 10px;
 	border-width: 3px;
 	border-color: black;
-
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
 }
 .botones{
-	flex-direction: initial;
 	color: black;
 	font-weight: bold;
 	font-size: 20px;
@@ -52,16 +74,32 @@ main{
 	border-radius: 7px;
 	padding: 10px 10px;
 	cursor: pointer;
-	display: flex;
+	gap: 20px;
 
 }
 .botones:active{
-	background-color: red;
+	background-color: black;
 	transform: scale(1.1);
-	transition: default;
+	/*transition: 1s;*/
+	border: none;
+	color: whitesmoke;
 
 }
 .imagen{
+	width: 135px;
+	height: 305px;
+	display: flex;
+	align-content: center;
+	align-items: center ;
+
+}
+img{
+	border-radius: 10px;
+}
+
+footer{
+	background-color: whitesmoke;
 	width: 100%;
-	height: 400px;
+	height: 100px;
+	text-align: center;
 }
